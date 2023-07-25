@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML and CSS Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>HTML and CSS Quiz</h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Which HTML tag is used to define an unordered list?</p>
+        <label><input type="radio" name="q1" value="a" required> a) &lt;ul&gt;</label>
+        <label><input type="radio" name="q1" value="b"> b) &lt;ol&gt;</label>
+        <label><input type="radio" name="q1" value="c"> c) &lt;li&gt;</label>
+      </div>
+
+      <div class="question">
+        <p>2. How can you add comments in HTML?</p>
+        <label><input type="radio" name="q2" value="a" required> a) &lt;!-- This is a comment --&gt;</label>
+        <label><input type="radio" name="q2" value="b"> b) &lt;comment&gt; This is a comment &lt;/comment&gt;</label>
+        <label><input type="radio" name="q2" value="c"> c) // This is a comment</label>
+      </div>
+
+      <div class="question">
+        <p>3. What is the correct way to link an external CSS file to an HTML document?</p>
+        <label><input type="radio" name="q3" value="a" required> a) &lt;link rel="stylesheet" href="styles.css"&gt;</label>
+        <label><input type="radio" name="q3" value="b"> b) &lt;style src="styles.css"&gt;</label>
+        <label><input type="radio" name="q3" value="c"> c) &lt;css&gt;styles.css&lt;/css&gt;</label>
+      </div>
+
+      <div class="question">
+        <p>4. How can you select all &lt;h2&gt; elements with CSS?</p>
+        <label><input type="radio" name="q4" value="a" required> a) h2 { }</label>
+        <label><input type="radio" name="q4" value="b"> b) .h2 { }</label>
+        <label><input type="radio" name="q4" value="c"> c) #h2 { }</label>
+      </div>
+
+      <div class="question">
+        <p>5. What is the purpose of the CSS box-sizing property?</p>
+        <label><input type="radio" name="q5" value="a" required> a) To set the background color of an element</label>
+        <label><input type="radio" name="q5" value="b"> b) To define the size of an element's box</label>
+        <label><input type="radio" name="q5" value="c"> c) To control the space between elements</label>
+      </div>
+
+      <button type="submit">Submit Quiz</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Quiz Result:</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
